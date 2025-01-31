@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   font-family: 'Sora', sans-serif;
   margin: 0;
@@ -290,17 +289,8 @@ p {
     flex-wrap: wrap;
   }
 }
-/* .easy { background: lightblue; }
-.medium { background: orange; }
-.hard { background: green; color: white; } */
 
-/* Security Section */
-/* Security Section */
 
-/* Default styles for larger screens */
-/* Default styles for larger screens */
-/* Default styles for larger screens */
-/* Security Section Styles */
 .security-section {
   padding: 5% 5%;
   text-align: center;
@@ -395,9 +385,7 @@ p {
   color: #666;
 }
 
-/* Responsive Media Queries */
 
-/* Medium Screens (Tablets) */
 @media (max-width: 1024px) {
   .card-container {
       flex-direction: column;
@@ -474,7 +462,6 @@ p {
 
 
 
-/* Testimonial */
 
 
 /* Testimonial */
@@ -568,14 +555,14 @@ p {
 /* Media Query for tablet screens (max-width: 768px) */
 @media (max-width: 768px) {
   .testimonial-section {
-    flex-direction: column; /* Stack video and text on top of each other */
-    padding: 3rem 1rem; /* Reduced padding */
+    flex-direction: column; 
+    padding: 3rem 1rem; 
   }
 
   .testimonial-video {
-    width: 100%; /* Make video container take full width */
+    width: 100%; 
     max-width: 100%;
-    height: 300px; /* Set a fixed height for the video */
+    height: 300px; 
   }
 
   .play-icon {
@@ -685,66 +672,65 @@ p {
   font-weight: bold;
 }
 
-/* Media Query for tablet screens (max-width: 768px) */
 @media (max-width: 768px) {
   .products h2 {
-    padding-left: 20px; /* Reduce left padding for better alignment */
+    padding-left: 20px; 
     text-align: center;
   }
 
   .product-cards {
-    flex-direction: column; /* Stack the cards vertically */
-    align-items: center; /* Center align the cards */
-    gap: 15px; /* Reduce gap between cards */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px; 
   }
 
   .cardp {
-    max-width: 100%; /* Make cards take full width */
-    width: 90%; /* Give some space on the sides */
+    max-width: 100%; 
+    width: 90%; 
   }
 
   .cardp img {
-    height: 150px; /* Reduce image height on smaller screens */
+    height: 150px; 
   }
 }
 
-/* Media Query for small screens (max-width: 480px) */
 @media (max-width: 480px) {
   .products h2 {
-    font-size: 1.5rem; /* Make the heading smaller */
+    font-size: 1.5rem;
     padding-left: 10px;
   }
 
   .product-cards {
-    flex-direction: column; /* Stack cards vertically on very small screens */
+    flex-direction: column; 
     align-items: center;
   }
 
   .cardp {
-    width: 90%; /* Ensure the cards take up most of the screen width */
-    padding: 15px; /* Adjust padding for smaller screens */
+    width: 90%; 
+    padding: 15px;
   }
 
   .cardp img {
-    height: 120px; /* Further reduce image height */
+    height: 120px; 
   }
 
   .cardp h3 {
-    font-size: 1.1rem; /* Adjust heading size */
+    font-size: 1.1rem;
   }
 
   .cardp p {
-    font-size: 0.9rem; /* Adjust paragraph text size */
+    font-size: 0.9rem; 
   }
 }
-/* FAQ Section */
+
+
 .faq {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   background-color: #f8e9e7;
   padding: 50px 20px;
-  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .faq-left {
@@ -786,22 +772,21 @@ p {
   font-weight: bold;
 }
 
-/* Media Query for tablet screens (max-width: 768px) */
 @media (max-width: 768px) {
   .faq {
     padding: 30px 15px;
-    flex-direction: column; /* Stack the left and right sections vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
   .faq-left {
-    max-width: 100%; /* Full width for left section on small screens */
+    max-width: 100%; 
     text-align: center;
     margin-bottom: 20px;
   }
 
   .faq-left h2 {
-    font-size: 22px; /* Slightly smaller font size */
+    font-size: 22px; 
   }
 
   .faq-left p {
@@ -811,32 +796,31 @@ p {
 
   .faq-right {
     max-width: 100%;
-    width: 100%; /* Ensure right section takes full width */
+    width: 100%; 
     text-align: center;
   }
 
   .faq-item {
-    font-size: 18px; /* Slightly smaller font size for better readability */
-    padding: 10px 15px; /* Adjust padding */
+    font-size: 18px; 
+    padding: 10px 15px; 
   }
 
   .faq-item span {
-    font-size: 22px; /* Adjust icon size */
+    font-size: 22px; 
   }
 }
 
-/* Media Query for mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
   .faq-left {
-    padding: 0 10px; /* Add padding for small screens */
+    padding: 0 10px; 
   }
 
   .faq-left h2 {
-    font-size: 18px; /* Smaller heading for smaller screens */
+    font-size: 18px; 
   }
 
   .faq-left p {
-    font-size: 13px; /* Smaller paragraph font size */
+    font-size: 13px; 
   }
 
   .faq-right {
@@ -844,12 +828,12 @@ p {
   }
 
   .faq-item {
-    font-size: 16px; /* Even smaller font size on very small screens */
-    padding: 8px 10px; /* Reduce padding */
+    font-size: 16px; 
+    padding: 8px 10px; 
   }
 
   .faq-item span {
-    font-size: 18px; /* Make the plus icon smaller */
+    font-size: 18px; 
   }
 }
 
@@ -918,16 +902,16 @@ p {
 .cta-section {
   margin-top: 4rem;
   margin-right: 7rem;
-  background-color: transparent; /* Transparent background */
+  background-color: transparent;
   padding: 1rem 0;
   text-align: left;
-  border-bottom: 2px solid white; /* White bottom border */
+  border-bottom: 2px solid white; 
 }
 
 .cta-section h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffcc00; /* Yellow color for heading */
+  color: #ffcc00;
   margin-bottom: 1rem;
 }
 
@@ -940,8 +924,8 @@ p {
 
 .cta-section input {
   flex: 1;
-  background-color: transparent; /* Transparent background */
-  color: white; /* White text */
+  background-color: transparent; 
+  color: white; 
   border: none;
   font-size: 1rem;
   outline: none;
@@ -950,7 +934,7 @@ p {
 }
 
 .cta-section input::placeholder {
-  color: white; /* White placeholder text */
+  color: white; 
   opacity: 0.7;
 }
 
@@ -958,13 +942,13 @@ p {
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
-  color: #ffcc00; /* Yellow arrow */
+  color: #ffcc00; 
   cursor: pointer;
   padding-left: 0.5rem;
 }
 
 .cta-section button:hover {
-  transform: scale(1.2); /* Slight hover effect */
+  transform: scale(1.2); 
   transition: transform 0.3s;
 }
 
@@ -989,14 +973,14 @@ p {
   text-decoration: none;
 }
 
-/* Media Query for tablet screens (max-width: 768px) */
+
 @media (max-width: 768px) {
   .footer {
-    padding: 3rem 20px; /* Reduced padding */
+    padding: 3rem 20px; 
   }
 
   .footer-content {
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
@@ -1008,7 +992,7 @@ p {
   .social-links a {
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 1rem; /* Larger font size for easy reading */
+    font-size: 1rem; 
   }
 
   .links-section {
@@ -1029,11 +1013,11 @@ p {
   }
 
   .cta-section h3 {
-    font-size: 1.2rem; /* Smaller heading for tablets */
+    font-size: 1.2rem;
   }
 
   .cta-section input {
-    width: 70%; /* Adjust input width */
+    width: 70%; 
   }
 
   .footer-bottom {
@@ -1044,21 +1028,20 @@ p {
   }
 
   .footer-bottom p {
-    font-size: 1rem; /* Larger font size for readability */
+    font-size: 1rem; 
     margin-bottom: 1rem;
   }
 
   .bottom-links a {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    font-size: 1rem; /* Larger links for easier clicking */
+    font-size: 1rem; 
   }
 }
 
-/* Media Query for mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
   .footer {
-    padding: 2rem 10px; /* Reduced padding for small screens */
+    padding: 2rem 10px; 
   }
 
   .footer-content {
@@ -1070,7 +1053,7 @@ p {
   }
 
   .social-links a {
-    font-size: 1.1rem; /* Larger font size for better readability */
+    font-size: 1.1rem; 
   }
 
   .links-section {
@@ -1078,16 +1061,16 @@ p {
   }
 
   .cta-section h3 {
-    font-size: 1rem; /* Even smaller font size for mobile screens */
+    font-size: 1rem; 
   }
 
   .cta-section input {
-    width: 80%; /* Adjust width to fit screen */
+    width: 80%; 
     padding: 0.4rem;
   }
 
   .cta-section button {
-    font-size: 1.2rem; /* Adjust button size */
+    font-size: 1.2rem;
   }
 
   .footer-bottom {
@@ -1096,11 +1079,11 @@ p {
   }
 
   .footer-bottom p {
-    font-size: 0.9rem; /* Slightly smaller font size */
+    font-size: 0.9rem; 
     margin-bottom: 1rem;
   }
 
   .bottom-links a {
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    font-size: 0.9rem; 
   }
 }
