@@ -300,104 +300,60 @@ p {
 /* Default styles for larger screens */
 /* Default styles for larger screens */
 /* Default styles for larger screens */
+/* Security Section Styles */
 .security-section {
-  margin-top: 20%;
-  padding-top: 5%;
+  padding: 5% 5%;
   text-align: center;
-  max-width: 100%;
-  height: 500px;
-  background-color: lightgray;
+  background-color: #f8f8f8;
 }
 
-.security-section h2 {
-  font-size: 24px;
-  margin-left: 5%;
-  display: flex;
-  align-content: baseline;
+/* Header Styling */
+.security-header h2 {
+  font-size: 26px;
   font-weight: bold;
+  color: #333;
 }
 
-.security-section p {
+.security-header p {
   font-size: 16px;
-  color: gray;
-  margin-left: 5%;
-  display: flex;
-  align-content: baseline;
+  color: #666;
   margin-bottom: 30px;
 }
 
 /* Card Grid */
 .card-container {
-  margin-left: 5%;
   display: flex;
-  max-width: 70%;
-  gap: 15px;
-  align-items: stretch; 
+  justify-content: center;
+  gap: 20px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-/* Large Card Styles */
-
-
+/* Large Cards */
 .cards {
-  flex: 1; 
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  align-content: baseline;
-  justify-content: space-between;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-} 
-.small-card-container {
-  flex: 1; /* Takes the same width as the other cards */
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Space between stacked small cards */
-}
-
-/* Small Card Styles */
-.small-card {
-  flex: 1; /* Each takes half the height of this column */
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  /* justify-content: space-between; */
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-}
-.card-icon {
-  font-size: 24px;
-}
-
-.card-content {
-  /* flex-grow: 1; */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* margin-left: 15px; */
-  text-align: left;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease-in-out;
 }
 
-.cards h3 {
-  font-size: 18px;
-  font-weight: bold;
+.cards:hover {
+  transform: translateY(-5px);
 }
 
-.cards p {
-  font-size: 14px;
-  color: gray;
+/* Small Cards Container */
+.small-card-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-
-/* .arrow {
-  font-size: 18px;
-  color: black;
-} */
 
 /* Small Card Styles */
 .small-card {
@@ -409,68 +365,113 @@ p {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
+  transition: transform 0.3s ease-in-out;
 }
 
+.small-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.card-icon {
+  font-size: 24px;
+  color: #007bff;
+}
+
+/* Card Content */
+.card-content {
+  text-align: left;
+}
+
+.cards h3,
 .small-card h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-} 
+  color: #333;
+}
 
-/* Media Query for medium and small screens */
+.cards p {
+  font-size: 14px;
+  color: #666;
+}
 
+/* Responsive Media Queries */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .card-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 90%;
+  }
+
+  .cards,
+  .small-card {
+      width: 90%;
+  }
+}
+
+/* Small Screens (Phones) */
 @media (max-width: 768px) {
   .security-section {
-    padding-top: 15%;
-    padding-bottom: 15%;
+      padding: 10% 5%;
+  }
+
+  .security-header h2 {
+      font-size: 22px;
+  }
+
+  .security-header p {
+      font-size: 14px;
   }
 
   .card-container {
-    gap: 15px;
-    padding: 0 2%;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
   }
 
-  .cards, .small-card {
-    padding: 15px;
-    max-width: 90%; /* Adjust width to fit screen */
+  .cards,
+  .small-card {
+      width: 100%;
+      text-align: center;
+      align-items: center;
   }
 
-  .card-icon {
-    font-size: 28px;
+  .card-content {
+      align-items: center;
   }
 
-  .cards h3 {
-    font-size: 16px;
-  }
-
-  .cards p {
-    font-size: 12px;
+  .arrow {
+      display: none; /* Remove arrow for smaller screens */
   }
 }
 
-/* Media Query for very small screens (e.g., phones in portrait mode) */
+/* Very Small Screens (Portrait Phones) */
 @media (max-width: 480px) {
-  .card-container {
-    gap: 10px;
-    padding: 0 2%;
+  .security-header h2 {
+      font-size: 20px;
   }
 
-  .cards, .small-card {
-    padding: 10px;
-    max-width: 95%; /* Make cards even smaller */
+  .security-header p {
+      font-size: 12px;
   }
 
-  .card-icon {
-    font-size: 24px; /* Smaller icons for mobile */
-  }
-
-  .cards h3 {
-    font-size: 14px; /* Smaller title text */
+  .cards h3,
+  .small-card h3 {
+      font-size: 16px;
   }
 
   .cards p {
-    font-size: 10px; /* Smaller paragraph text */
+      font-size: 12px;
+  }
+
+  .card-icon {
+      font-size: 20px;
   }
 }
+
 
 
 /* Testimonial */
